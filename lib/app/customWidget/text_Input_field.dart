@@ -2,6 +2,11 @@ import 'package:estudo_flutter_ui_02/app/customWidget/pallete.dart';
 import 'package:flutter/material.dart';
 
 class TextInputField extends StatelessWidget {
+  final IconData icon;
+  final String hint;
+  final TextInputType inputType;
+  final TextInputAction inputAction;
+
   const TextInputField({
     Key? key,
     required this.icon,
@@ -9,11 +14,6 @@ class TextInputField extends StatelessWidget {
     required this.inputType,
     required this.inputAction,
   }) : super(key: key);
-
-  final IconData icon;
-  final String hint;
-  final TextInputType inputType;
-  final TextInputAction inputAction;
 
   @override
   Widget build(BuildContext context) {

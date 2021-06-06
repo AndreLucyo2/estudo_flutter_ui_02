@@ -29,7 +29,7 @@ class AppWidget extends StatelessWidget {
           initialRoute: AppRoutes.MAIN,
           //Definir as rotas nomeadas
           routes: {
-            AppRoutes.MAIN: (context) => LoginPage(),
+            AppRoutes.MAIN: (context) => LoginPage01(),
             AppRoutes.HOME: (context) => HomePage(),
             AppRoutes.LOG_IN: (context) => LoginPage(),
             AppRoutes.LOG_IN01: (context) => LoginPage01(),

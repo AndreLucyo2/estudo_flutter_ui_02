@@ -52,21 +52,14 @@ class DrawerHome extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: Icon(Icons.settings),
-            title: Text('Configurações'),
-            subtitle: Text('Tela de configurações.'),
-            onTap: () {
-              print('Abre a tela configurações');
-            },
-          ),
-          Divider(),
-          ListTile(
             title: Text('Calls'),
+            subtitle: Text('Calls.'),
             leading: Icon(Icons.call),
             onLongPress: () {},
           ),
           ListTile(
             title: Text('Support'),
+            subtitle: Text('Suporte.'),
             leading: Icon(
               Icons.report_problem,
               color: Colors.red,
@@ -83,7 +76,15 @@ class DrawerHome extends StatelessWidget {
           ),
           Divider(),
           ListTile(
-            leading: Icon(Icons.login),
+            leading: Icon(Icons.person),
+            title: Text('Login'),
+            subtitle: Text('Teste de Tela de login'),
+            onTap: () {
+              Navigator.of(context).pushNamed(AppRoutes.LOG_IN);
+            },
+          ),
+          ListTile(
+            leading: Icon(Icons.person),
             title: Text('Login01'),
             subtitle: Text('Teste de nova tela'),
             onTap: () {
@@ -91,6 +92,14 @@ class DrawerHome extends StatelessWidget {
             },
           ),
           Divider(),
+          ListTile(
+            leading: Icon(Icons.settings),
+            title: Text('Configurações'),
+            subtitle: Text('Tela de configurações.'),
+            onTap: () {
+              print('Abre a tela configurações');
+            },
+          ),
           ListTile(
             leading: Icon(Icons.logout),
             title: Text('Sair'),

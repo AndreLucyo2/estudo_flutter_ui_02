@@ -2,6 +2,7 @@ import 'dart:ui';
 import 'package:estudo_flutter_ui_02/app/customWidget/pallete.dart';
 import 'package:estudo_flutter_ui_02/app/customWidget/password_Input.dart';
 import 'package:estudo_flutter_ui_02/app/customWidget/text_Input_field.dart';
+import 'package:estudo_flutter_ui_02/app/routes/app_routes.dart';
 import 'package:flutter/material.dart';
 
 class CreateNewAccount extends StatelessWidget {
@@ -11,7 +12,7 @@ class CreateNewAccount extends StatelessWidget {
     return Stack(
       children: [
         Image.asset(
-          'assets/images/register_bg.png',
+          'assets/images/gradienteBlack.jpg',
           height: MediaQuery.of(context).size.height,
           width: MediaQuery.of(context).size.width,
           fit: BoxFit.cover,
@@ -35,8 +36,9 @@ class CreateNewAccount extends StatelessWidget {
                             backgroundColor: Colors.grey[400]!.withOpacity(
                               0.4,
                             ),
+                            //Avatar de login:
                             child: Icon(
-                              Icons.login,
+                              Icons.person,
                               color: kWhite,
                               size: size.width * 0.1,
                             ),
@@ -55,8 +57,9 @@ class CreateNewAccount extends StatelessWidget {
                           shape: BoxShape.circle,
                           border: Border.all(color: kWhite, width: 2),
                         ),
+                        //Selecionar Foto:
                         child: Icon(
-                          Icons.arrow_upward,
+                          Icons.settings,
                           color: kWhite,
                         ),
                       ),
@@ -69,7 +72,7 @@ class CreateNewAccount extends StatelessWidget {
                 Column(
                   children: [
                     TextInputField(
-                      icon: Icons.login,
+                      icon: Icons.person,
                       hint: 'User',
                       inputType: TextInputType.name,
                       inputAction: TextInputAction.next,
@@ -103,12 +106,13 @@ class CreateNewAccount extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
-                          'Already have an account?',
+                          'Ja possui conta?',
                           style: kBodyText,
                         ),
                         GestureDetector(
                           onTap: () {
-                            Navigator.pushNamed(context, '/');
+                            Navigator.of(context)
+                                .pushReplacementNamed(AppRoutes.LOG_IN01);
                           },
                           child: Text(
                             'Login',

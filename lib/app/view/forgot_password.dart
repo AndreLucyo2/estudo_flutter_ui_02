@@ -10,7 +10,7 @@ class ForgotPassword extends StatelessWidget {
     return Stack(
       children: [
         Image.asset(
-          'assets/images/login_bg.png',
+          'assets/images/gradienteBlack.jpg',
           height: MediaQuery.of(context).size.height,
           width: MediaQuery.of(context).size.width,
           fit: BoxFit.cover,
@@ -25,7 +25,7 @@ class ForgotPassword extends StatelessWidget {
                 Navigator.pop(context);
               },
               icon: Icon(
-                Icons.arrow_back_ios,
+                Icons.radar,
                 color: kWhite,
               ),
             ),
@@ -41,7 +41,7 @@ class ForgotPassword extends StatelessWidget {
                 child: Column(
                   children: [
                     SizedBox(
-                      height: size.height * 0.1,
+                      height: size.height * 0.09,
                     ),
                     Container(
                       width: size.width * 0.8,
