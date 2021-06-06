@@ -40,12 +40,13 @@ class DrawerHome extends StatelessWidget {
               print('Abre a tela configurações');
             },
           ),
-          Column(
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: [
-              Text('Tema Dark ou ligth.'),
-              SwtchTheme(),
-            ],
+          ListTile(
+            leading: SwtchTheme(),
+            title: Text('Config. Tema'),
+            subtitle: Text('Tema Dark ou ligth'),
+            onTap: () {
+              print('Abre a tela configurações');
+            },
           ),
         ],
       ),
