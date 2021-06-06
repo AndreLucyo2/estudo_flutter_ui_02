@@ -1,5 +1,4 @@
 import 'dart:ui';
-
 import 'package:estudo_flutter_ui_02/app/customWidget/pallete.dart';
 import 'package:estudo_flutter_ui_02/app/customWidget/password_Input.dart';
 import 'package:estudo_flutter_ui_02/app/customWidget/text_Input_field.dart';

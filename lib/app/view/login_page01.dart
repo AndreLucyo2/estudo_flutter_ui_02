@@ -38,6 +38,7 @@ class LoginPage01 extends StatelessWidget {
                     hint: 'Email',
                     inputType: TextInputType.emailAddress,
                     inputAction: TextInputAction.next,
+                    
                   ),
                   PasswordInput(
                     icon: Icons.lock,
@@ -65,10 +66,11 @@ class LoginPage01 extends StatelessWidget {
                 ],
               ),
               GestureDetector(
-                onTap: () => Navigator.pushNamed(context, 'CreateNewAccount'),
+                onTap: () =>
+                    Navigator.of(context).pushNamed(AppRoutes.NEW_ACCOUNT),
                 child: Container(
                   child: Text(
-                    'Create New Account',
+                    'Criar nova conta',
                     style: kBodyText,
                   ),
                   decoration: BoxDecoration(
