@@ -83,6 +83,15 @@ class DrawerHome extends StatelessWidget {
           ),
           Divider(),
           ListTile(
+            leading: SwtchTheme(),
+            title: Text('Login01'),
+            subtitle: Text('Teste de nova tela'),
+            onTap: () {
+              Navigator.of(context).pushNamed(AppRoutes.LOG_IN01);
+            },
+          ),
+          Divider(),
+          ListTile(
             leading: Icon(Icons.logout),
             title: Text('Sair'),
             subtitle: Text('Encerrar sessão.'),

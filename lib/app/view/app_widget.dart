@@ -1,6 +1,9 @@
 import 'package:estudo_flutter_ui_02/app/routes/app_routes.dart';
+import 'package:estudo_flutter_ui_02/app/view/create_new_account.dart';
+import 'package:estudo_flutter_ui_02/app/view/forgot_password.dart';
 import 'package:estudo_flutter_ui_02/app/view/home_page.dart';
 import 'package:estudo_flutter_ui_02/app/view/login_page.dart';
+import 'package:estudo_flutter_ui_02/app/view/login_page01.dart';
 import 'package:estudo_flutter_ui_02/app/view_controller/app_controller.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -27,8 +30,11 @@ class AppWidget extends StatelessWidget {
           //Definir as rotas nomeadas
           routes: {
             AppRoutes.MAIN: (context) => LoginPage(),
-            AppRoutes.LOG_IN: (context) => LoginPage(),
             AppRoutes.HOME: (context) => HomePage(),
+            AppRoutes.LOG_IN: (context) => LoginPage(),
+            AppRoutes.LOG_IN01: (context) => LoginPage01(),
+            AppRoutes.FORGOT_PASS: (context) => ForgotPassword(),
+            AppRoutes.NEW_ACCOUNT: (context) => CreateNewAccount(),
           },
         );
       },
