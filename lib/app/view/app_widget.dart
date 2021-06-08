@@ -1,5 +1,6 @@
 import 'package:estudo_flutter_ui_02/app/routes/app_routes.dart';
 import 'package:estudo_flutter_ui_02/app/view/create_new_account.dart';
+import 'package:estudo_flutter_ui_02/app/view/crud_sqlite_macoratti.dart';
 import 'package:estudo_flutter_ui_02/app/view/forgot_password.dart';
 import 'package:estudo_flutter_ui_02/app/view/home_page.dart';
 import 'package:estudo_flutter_ui_02/app/view/login_page.dart';
@@ -26,7 +27,7 @@ class AppWidget extends StatelessWidget {
                 : Brightness.light,
           ),
           //Definir a rota inicial
-          initialRoute: AppRoutes.MAIN,
+          initialRoute: AppRoutes.CRUD_SQLITE_MACORATTI,
           //Definir as rotas nomeadas
           routes: {
             AppRoutes.MAIN: (context) => LoginPage01(),
@@ -35,6 +36,7 @@ class AppWidget extends StatelessWidget {
             AppRoutes.LOG_IN01: (context) => LoginPage01(),
             AppRoutes.FORGOT_PASS: (context) => ForgotPassword(),
             AppRoutes.NEW_ACCOUNT: (context) => CreateNewAccount(),
+            AppRoutes.CRUD_SQLITE_MACORATTI: (context) => CrudSqliteMacoratti(),
           },
         );
       },
